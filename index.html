@@ -11,7 +11,7 @@
     <p id="description" class="description">
           Fill out this form with the required information. Thank you for trusting Zitha !
     </p>
-    <form action="https://formspree.io/f/mzzpbdpz" method="POST" id="survey-form">
+     <form action="https://formspree.io/f/mzzpbdpz" method="POST" id="survey-form">
       <div class="form-group">
           <label id="name-label" for="name">Name </label>
           <input
@@ -35,12 +35,25 @@
           />
         </div>
          <div class="form-group">
+          <label id="phone-label" for="phone"
+            >Phone number</label
+          >
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            class="form-control"
+            placeholder="Enter your Phone Number"
+            required
+          />
+        </div>
+        <div class="form-group">
           <label id="number-label" for="number"
             >Number of attendees <span class="clue"> (optional)</span></label
           >
           <input
             type="number"
-            name="age"
+            name="number of attendees"
             id="number"
             min="1"
             max="70"
@@ -48,9 +61,10 @@
             placeholder="Number"
           />
         </div>
+        
         <div class="form-group">
           <p>Which option best describes your event ?</p>
-          <select id="dropdown" name="role" class="form-control" required>
+          <select id="dropdown" name="event type" class="form-control" required>
             <option disabled selected value>Select event type</option>
             <option value="workshop">Workshop</option>
             <option value="training">Training</option>
