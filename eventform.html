@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Event Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+    <h1 id="title">Event Registration Form</h1>
+    <p id="description" class="description">
+          Fill out this form with the required information. Thank you for trusting Zitha !
+    </p>
+    <form id="survey-form">
+      <div class="form-group">
+          <label id="name-label" for="name">Name </label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="name">Email </label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+         <div class="form-group">
+          <label id="number-label" for="number"
+            >Number of attendees <span class="clue"> (optional)</span></label
+          >
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="1"
+            max="70"
+            class="form-control"
+            placeholder="Number"
+          />
+        </div>
+        <div class="form-group">
+          <p>Which option best describes your event ?</p>
+          <select id="dropdown" name="role" class="form-control" required>
+            <option disabled selected value>Select event type</option>
+            <option value="workshop">Workshop</option>
+            <option value="training">Training</option>
+            <option value="event">Social event</option>
+            <option value="meeting">Club meeting</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        
+        <div class="form-group">
+          <p>What is the age range of your event ?</p>
+          <label>
+            <input
+              name="age-range"
+              value="children"
+              type="radio"
+              class="input-radio"
+              checked
+            />Children (0-12 years)</label
+          >
+          <label>
+            <input
+              name="age-range"
+              value="teenagers"
+              type="radio"
+              class="input-radio"
+            />Teenagers (13-17 years)</label
+          >
+
+          <label>
+            <input
+              name="age-range"
+              value="teenagers"
+              type="radio"
+              class="input-radio"
+            />Adults (18+ years)</label
+          >
+
+          <label
+            ><input
+              name="age-range"
+              value="not-sure"
+              type="radio"
+              class="input-radio"
+            />Not specified</label
+          >
+          
+        </div>
+
+        <div class="form-group">
+          <label id="date-label" for="date">What day does your event start ?  </label>
+          <input
+            type="date"
+            name="date"
+            id="date"
+            class="form-control"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label id="date-label" for="date">What day does your event end ?  </label>
+          <input
+            type="date"
+            name="date"
+            id="date"
+            class="form-control"
+            required
+          />
+        </div>
+
+         <div class="form-group">
+          <p>
+            Which of these do you need for your event ? 
+            <span class="clue">(Check all that apply)</span>
+          </p>
+
+          
+          <label>
+            <input
+              name="assistance"
+              value="coffee-break"
+              type="checkbox"
+              class="input-checkbox"
+            />Coffee break (additional fees: contact us for further explanation)</label
+          >
+          <label
+            ><input
+              name="assistance"
+              value="data-visualization"
+              type="checkbox"
+              class="input-checkbox"
+            />Lunch (additional fees: contact us for further explanation)</label
+          >
+
+          <label
+            ><input
+              name="assistance"
+              value="projector"
+              type="checkbox"
+              class="input-checkbox"
+            />Projector</label
+          >
+
+        </div>
+        <div class="form-group">
+          <p>Provide a detailed explanation of your event (required)</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Enter your explanation here..."
+            required
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
